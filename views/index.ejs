@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Decorative celebration banner -->
+    <div class="celebration">🎂🎉🎈🎁🎊</div>
+
+    <!-- Main content container -->
+    <div class="container">
+      <!-- Card containing the submission form -->
+      <div class="card">
+        <!-- Page title -->
+        <h1 class="title">🎂 Birthday Reminder</h1>
+        <p class="subtitle">Never forget a birthday again!</p>
+
+        <!-- Display error alert if present -->
+        <% if (error) { %>
+        <div class="alert alert-error">⚠️ <%= error %></div>
+        <% } %>
+
+        <!-- Birthday submission form -->
+        <form action="/add-birthday" method="POST" class="form">
+          <!-- Name input field -->
+          <div class="form-group">
+            <label for="username">👤 Name</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              class="form-input"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <!-- Email input field -->
+          <div class="form-group">
+            <label for="email">📧 Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              placeholder="your.email@example.com"
+              required
+            />
+          </div>
+
+          <!-- Date of birth input field -->
+          <div class="form-group">
+            <label for="dateOfBirth">🎂 Date of Birth</label>
+            <input
+              type="date"
+              id="dateOfBirth"
+              name="dateOfBirth"
+              class="form-input"
+              required
+            />
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary">
+            ✨ Save Birthday
+          </button>
+        </form>
+
+        <!-- Informational note -->
+        <div class="note">
+          <p>💌 You'll receive a birthday email on your special day!</p>
+          <p>⏰ We check birthdays every day at 7:00 AM</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      Built with ❤️ by
+      <a
+        href="https://github.com/SamuelChiazalam"
+        target="_blank"
+        style="color: white; text-decoration: none; font-weight: 600"
+        >SamTech</a
+      >
+  </body>
+</html>

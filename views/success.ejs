@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="celebration">🎉✨🎊🎈✨🎉</div>
+
+    <div class="container">
+      <div class="card success-card">
+        <!-- Success icon -->
+        <div class="success-icon">✅</div>
+
+        <!-- Success message and details -->
+        <h1 class="title">Birthday Saved!</h1>
+
+        <div class="success-message">
+          <p>🎂 <strong><%= username %></strong></p>
+          <p>Birthday: <%= birthday %></p>
+          <p class="note">We'll send you a special email on your birthday!</p>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="button-group">
+          <a href="/" class="btn btn-primary"> ➕ Add Another Birthday </a>
+          <a href="/api/birthdays" class="btn btn-secondary">
+            📋 View All Birthdays
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Built with ❤️ by
+      <a
+        href="https://github.com/SamuelChiazalam"
+        target="_blank"
+        style="color: white; text-decoration: none; font-weight: 600"
+        >SamTech</a
+      >
+    </div>
+  </body>
+</html>
