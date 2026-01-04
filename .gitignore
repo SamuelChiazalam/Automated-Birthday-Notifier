@@ -16,5 +16,8 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Package files
+package-lock.json
+
 # Testing
 coverage/
